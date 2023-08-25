@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px,100px,1fr,1fr,1fr;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.header{
+    text-align: center;
+    background-color: aqua;
+  
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.header h3{
+    margin-bottom: 10px;
+}
+.navbar{
+    height: 100px;
+    text-align: center;
+
+    background-color: grey ;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.navbar ul li{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.navbar ul li a{
+   
+    text-decoration: none;
+  
+    color: white;
+}
+
+.item1{
+    height: auto;
+    padding: 20px;
+margin: 20px;
+    color: rgb(43, 179, 43);
+    background-color: whitesmoke;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    box-shadow: 0px 0px 1px solid green;
+
+}
+.item1 img{
+     height: 200px;
+    width: 200px;
+}
+.item1 button{
+    width: 10%;
+    background-color: black;
+    color: aliceblue;
+}
+
+.item2{
+    padding: 20px;
+    margin: 20px;
+    color: rgb(43, 179, 43);
+    background-color: whitesmoke;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.item2 img{
+    height: 200px;
+   width: 200px;
+}
+
+.item2 button{
+    width: 10%;
+    background-color: black;
+    color: aliceblue;
+}
+
+.info{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke ;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info button{
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 10%;
+    background-color: black;
+    color: aliceblue;
+}
+
+.footer{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black ;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p{
+    margin-top: 30px;
+}
